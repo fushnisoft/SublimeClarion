@@ -6,6 +6,10 @@
 	<array>
 		<string>clw</string>
 		<string>inc</string>
+		<string>txa</string>
+		<string>txd</string>
+		<string>tpl</string>
+		<string>tpw</string>
 	</array>
 	<key>name</key>
 	<string>Clarion</string>

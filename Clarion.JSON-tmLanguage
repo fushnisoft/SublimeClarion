@@ -1,6 +1,6 @@
 { "name": "Clarion",
   "scopeName": "source.clarion", 
-  "fileTypes": ["clw", "inc"],
+  "fileTypes": ["clw", "inc", "txa", "txd", "tpl", "tpw"],
   "patterns": [
     { "include": "#comments" },
     { "include": "#classLabels" },

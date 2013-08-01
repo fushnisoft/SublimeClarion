@@ -1,0 +1,9 @@
+{
+
+    "name": "Comment",
+    "scope": "source.clarion",
+    "settings" : {
+     "shellVariables" : [{"name" : "TM_COMMENT_START", "value": "! "}]
+    },
+    "uuid": "67d787f4-beb2-4141-bc55-7379413555ea"
+}

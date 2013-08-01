@@ -5,7 +5,7 @@
     { "include": "#comments" },
     { "include": "#classLabels" },
     { "include": "#labels" },
-    { "include": "#langConstants" },
+    { "include": "#langConstants" },s
     { "include": "#langProps" },
     { "include": "#langFunctions" },
     { "include": "#implicits" },

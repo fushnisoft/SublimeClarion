@@ -1,0 +1,6 @@
+{ "name": "Clarion Symbols",
+  "scope": "source.clarion entity.name.class.clarion",
+  "settings":  {"showInSymbolList": 1},
+  "symbolTransformation": "s/^(.*)/$1/",
+  "uuid": "4c36f95a-f37e-42ae-b0a1-3b9f37cc1951"
+}

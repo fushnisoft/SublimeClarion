@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Clarion Symbols</string>
+	<key>scope</key>
+	<string>source.clarion entity.name.class.clarion</string>
+	<key>settings</key>
+	<dict>
+		<key>showInSymbolList</key>
+		<integer>1</integer>
+	</dict>
+	<key>symbolTransformation</key>
+	<string>s/^(.*)/$1/</string>
+	<key>uuid</key>
+	<string>4c36f95a-f37e-42ae-b0a1-3b9f37cc1951</string>
+</dict>
+</plist>

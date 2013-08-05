@@ -1,0 +1,5 @@
+<snippet>
+	<content><![CDATA[${1:Var}['& CHOOSE(${1:Var}&=NULL,'IsNull','Ok') &']]]></content>
+	<tabTrigger>varn</tabTrigger>
+	<scope>source.clarion</scope>
+</snippet>

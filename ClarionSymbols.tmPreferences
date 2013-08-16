@@ -11,8 +11,6 @@
 		<key>showInSymbolList</key>
 		<integer>1</integer>
 	</dict>
-	<key>symbolTransformation</key>
-	<string>s/^(.*)/$1/</string>
 	<key>uuid</key>
 	<string>4c36f95a-f37e-42ae-b0a1-3b9f37cc1951</string>
 </dict>

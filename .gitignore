@@ -1,0 +1,6 @@
+#################
+## Sublime Extras
+#################
+
+*.sublime-workspace
+*.sublime-project

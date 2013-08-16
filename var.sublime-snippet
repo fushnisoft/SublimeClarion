@@ -1,0 +1,5 @@
+<snippet>
+	<content><![CDATA[${1:Var}['& ${1:Var} &']${0}]]></content>
+	<tabTrigger>var</tabTrigger>
+	<scope>source.clarion</scope>
+</snippet>

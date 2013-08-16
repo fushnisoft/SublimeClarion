@@ -115,7 +115,7 @@
 			<key>comment</key>
 			<string>label declarations with a different highlight for method names</string>
 			<key>match</key>
-			<string>^DISABLED_IN_JSON[A-Za-z_][A-Za-z0-9_:]*\.([A-Za-z_][A-Za-z0-9_:\.]*)\s</string>
+			<string>^[A-Za-z_][A-Za-z0-9_:]*\.([A-Za-z_][A-Za-z0-9_:\.]*)\s</string>
 			<key>name</key>
 			<string>entity.name.class.clarion</string>
 		</dict>

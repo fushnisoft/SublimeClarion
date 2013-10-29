@@ -1,7 +1,7 @@
 SublimeText package for Clarion
 ===============================
 
-v1.0.3 installed!
+v1.0.4 installed!
 
 Updates:
 --------

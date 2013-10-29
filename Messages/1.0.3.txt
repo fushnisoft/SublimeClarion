@@ -1,0 +1,16 @@
+SublimeText package for Clarion
+===============================
+
+v1.0.3 installed!
+
+Updates:
+--------
+
+ADDED: Installation and Upgrade Messages
+FIXED: highlighting - match for comments fixed
+ADDED: highlighting - currencyInPicture pattern
+
+Support:
+--------
+
+https://github.com/fushnisoft/SublimeClarion/issues

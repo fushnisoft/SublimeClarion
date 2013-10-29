@@ -1,0 +1,9 @@
+SublimeText package for Clarion
+===============================
+
+Thanks for installing the SublimeText package for Clarion!
+
+Support:
+--------
+
+https://github.com/fushnisoft/SublimeClarion/issues 

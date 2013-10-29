@@ -24,7 +24,7 @@
   "repository": {
 
     "comments": {
-      "match": "(\\![^=]|\\|).*",      
+      "match": "(\\!|\\|).*",      
       "name": "comment.line.clarion",
       "comment": "Comments"
     },
@@ -102,7 +102,7 @@
     },
 
     "currencyInPicture": {
-      "begin":"@[Nn][-]+[0-9\\.]*\\~",
+      "begin":"@[Nn][\\-]?[0-9\\.]*\\~",
       "end": "\\~",
       "name": "constant.numeric.clarion"
     },

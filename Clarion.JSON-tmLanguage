@@ -24,13 +24,13 @@
   "repository": {
 
     "comments": {
-      "match": "(\\![^=]|\\|).*",      
+      "match": "(\\!|\\|).*",      
       "name": "comment.line.clarion",
       "comment": "Comments"
     },
 
     "classLabels": {
-      "match": "^DISABLED_IN_JSON[A-Za-z_][A-Za-z0-9_:]*\\.([A-Za-z_][A-Za-z0-9_:\\.]*)\\s",
+      "match": "^[A-Za-z_][A-Za-z0-9_:]*\\.([A-Za-z_][A-Za-z0-9_:\\.]*)\\s",
       "name": "entity.name.class.clarion",
       "captures": {
         "1": { "name": "entity.other.inherited-class.clarion" }
@@ -102,7 +102,7 @@
     },
 
     "currencyInPicture": {
-      "begin":"@[Nn][-]+[0-9\\.]*\\~",
+      "begin":"@[Nn][\\-]?[0-9\\.]*\\~",
       "end": "\\~",
       "name": "constant.numeric.clarion"
     },

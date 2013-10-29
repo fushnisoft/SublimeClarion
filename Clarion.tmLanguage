@@ -115,7 +115,7 @@
 			<key>comment</key>
 			<string>label declarations with a different highlight for method names</string>
 			<key>match</key>
-			<string>^DISABLED_IN_JSON[A-Za-z_][A-Za-z0-9_:]*\.([A-Za-z_][A-Za-z0-9_:\.]*)\s</string>
+			<string>^[A-Za-z_][A-Za-z0-9_:]*\.([A-Za-z_][A-Za-z0-9_:\.]*)\s</string>
 			<key>name</key>
 			<string>entity.name.class.clarion</string>
 		</dict>
@@ -124,14 +124,14 @@
 			<key>comment</key>
 			<string>Comments</string>
 			<key>match</key>
-			<string>(\![^=]|\|).*</string>
+			<string>(\!|\|).*</string>
 			<key>name</key>
 			<string>comment.line.clarion</string>
 		</dict>
 		<key>currencyInPicture</key>
 		<dict>
 			<key>begin</key>
-			<string>@[Nn][-]+[0-9\.]*\~</string>
+			<string>@[Nn][\-]?[0-9\.]*\~</string>
 			<key>end</key>
 			<string>\~</string>
 			<key>name</key>

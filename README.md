@@ -21,35 +21,35 @@ and add the following, where you alter give the absolute path to YOUR .sln
 	"build_systems":
 	[
 	  {
-	      "name": "Clarion",                                   
+	      "name": "Clarion",
 
 	      //name your sublime-project the same as your .sln
-	       "cmd": [ 
-	       			   "${packages}\\Clarion\\CompileCW.cmd", 
+	       "cmd": [
+	       			   "${packages}\\Clarion\\CompileCW.cmd",
 
 	       			   // What to build, convention is the same folder and basename as this sublime-project file, but with a .sln instead
 			            "${project/\\.sublime-project/\\.sln/}",
 					      //or hard code the absolute path to the sln, for example; //   "c:\\HG\\TSI\\CW\\Est\\B47.sln",
 
-					       // Build Configuration typcially Debug|Release  
+					       // Build Configuration typcially Debug|Release
 				 			"Debug",
 							// "Release",
 
-							//CWRoot			            	
-				         "C:\\SV\\Clarion8", 	
+							//CWRoot
+				         "C:\\SV\\Clarion8",
 
 				         //(Optional) CW_Ver, such as "8.0.9579" will default to current
-				         "" 						
+				         ""
 			         ],
 
 	      //Appropriate for MSBuild in general
 	      //uses perl style regex: (maybe this) http://www.cs.tut.fi/~jkorpela/perl/regexp.html
-         "file_regex": "^\\s*(.*)\\(([0-9]*),([0-9]*)" 
-	      
+         "file_regex": "^\\s*(.*)\\(([0-9]*),([0-9]*)"
+
 	      //"working_dir": "${project_path}:${folder}}",
          //"shell" : true,
 
-         //Documentation on build systems: see http://docs.sublimetext.info/en/latest/reference/build_systems.html           
+         //Documentation on build systems: see http://docs.sublimetext.info/en/latest/reference/build_systems.html
 	   }
 	]
 

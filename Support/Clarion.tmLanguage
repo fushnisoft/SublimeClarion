@@ -43,6 +43,10 @@
 		</dict>
 		<dict>
 			<key>include</key>
+			<string>#userVars</string>
+		</dict>
+		<dict>
+			<key>include</key>
 			<string>#implicits</string>
 		</dict>
 		<dict>
@@ -230,6 +234,13 @@
 			<string>\'</string>
 			<key>name</key>
 			<string>string.quoted.single.clarion</string>
+		</dict>
+		<key>userVars</key>
+		<dict>
+			<key>match</key>
+			<string>\b(?i:LOC|GLO):\w*\b</string>
+			<key>name</key>
+			<string>variable.parameter.clarion</string>
 		</dict>
 	</dict>
 	<key>scopeName</key>

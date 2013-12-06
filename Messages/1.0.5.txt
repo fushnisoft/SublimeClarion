@@ -1,0 +1,14 @@
+SublimeText package for Clarion
+===============================
+
+v1.0.5 installed!
+
+Updates:
+--------
+
+ADDED: Highligting - support for LOC: and GLO: prefixes. Highligting scope "variable.parameter"
+
+Support:
+--------
+
+https://github.com/fushnisoft/SublimeClarion/issues

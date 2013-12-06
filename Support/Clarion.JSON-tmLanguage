@@ -1,5 +1,5 @@
 { "name": "Clarion",
-  "scopeName": "source.clarion", 
+  "scopeName": "source.clarion",
   "fileTypes": ["clw", "equ", "inc", "int", "txa", "txd", "tpl", "tpw"],
   "patterns": [
     { "include": "#comments" },
@@ -8,6 +8,7 @@
     { "include": "#langConstants" },
     { "include": "#langProps" },
     { "include": "#langFunctions" },
+    { "include": "#userVars" },
     { "include": "#implicits" },
     { "include": "#hardReservedKeywords" },
     { "include": "#softReservedKeywords" },
@@ -17,14 +18,14 @@
     { "include": "#strings" },
     { "include": "#attributes" },
     { "include": "#operators" },
-    { "include": "#currencyInPicture" },    
+    { "include": "#currencyInPicture" },
     { "include": "#numericConstants" }
   ],
 
   "repository": {
 
     "comments": {
-      "match": "(\\!|\\|).*",      
+      "match": "(\\!|\\|).*",
       "name": "comment.line.clarion",
       "comment": "Comments"
     },
@@ -46,7 +47,7 @@
     "hardReservedKeywords": {
       "match": "\\b(?i:ACCEPT|BREAK|BY|CASE|CHOOSE|CYCLE|DO|ELSE|ELSIF|END|EXECUTE|EXIT|FUNCTION|GOTO|IF|LOOP|MEMBER|NEW|OF|OROF|PARENT|PROCEDURE|PROGRAM|RETURN|ROUTINE|SELF|THEN|TIMES|TO|UNTIL|WHILE)\\b",
       "name": "keyword.clarion"
-    },  
+    },
 
     "softReservedKeywords": {
       "match": "\\b(?i:APPLICATION|CLASS|CODE|DATA|DETAIL|ENUM|FILE|FOOTER|FORM|GROUP|HEADER|INLINE|ITEM|JOIN|MAP|MENU|MENUBAR|MODULE|OLECONTROL|OPTION|QUEUE|RECORD|REPORT|ROW|SHEET|STRUCT|TAB|TABLE|TOOLBAR|VIEW|WINDOW|PROPERTY|INDEXER)\\b",
@@ -88,6 +89,11 @@
       "name": "support.constant.clarion"
     },
 
+    "userVars": {
+      "match": "\\b(?i:LOC|GLO):\\w*\\b",
+      "name": "variable.parameter.clarion"
+    },
+
     "implicits": {
       "match": "([A-Za-z][A-Za-z0-9_]+)(\\$|#|\")",
       "name": "keyword.implicit.clarion",
@@ -112,11 +118,11 @@
       "name": "constant.numeric.clarion"
     },
 
-    "strings": { 
+    "strings": {
       "name": "string.quoted.single.clarion",
       "begin": "\\'",
       "end": "\\'"
-    } 
+    }
 
   },
 

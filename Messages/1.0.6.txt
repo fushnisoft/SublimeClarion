@@ -1,0 +1,14 @@
+SublimeText package for Clarion
+===============================
+
+v1.0.6 installed!
+
+Updates:
+--------
+
+ADDED: text eol=crlf - force windows friendly line endings
+
+Support:
+--------
+
+https://github.com/fushnisoft/SublimeClarion/issues

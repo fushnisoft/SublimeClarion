@@ -1,44 +1,55 @@
+@ECHO CompileCW Updated: Feb/28/2014 
 @ECHO Curr Drive\Dir
 @CD
 @ECHO OFF
 ECHO\
 ECHO CompileCW.cmd %*
+ECHO Usage:
+ECHO Arg 1 - BuildWhat   - Should be FullPath to SLN or CWProj
+ECHO Arg 2 - BuildConfig - Should be RELEASE or DEBUG
+ECHO Arg 3 - CWRoot      - Path to CW
+ECHO Arg 4 - CWVer       - Values like: [Clarion 8.0.9759], or [] for CurrentVersion
+ECHO\
+ECHO Called With:
 ECHO Arg 1 - BuildWhat   - [%1]
 ECHO Arg 2 - BuildConfig - [%2]
 ECHO Arg 3 - CWRoot      - [%3]
 ECHO Arg 4 - CWVer       - [%4]
 ECHO\
 CALL :SetAndParseBuildWhat  %1
-::v-- remove trailing / from BuildWahtDir (for some reason, I can't seem to get this to work in the procedure)
 SET BuildWhatDir=%BuildWhatDir:~0,-1%
-::---------------------
-::SET BuildConfig=Debug
-::SET CWRoot=C:\SV\Clarion8
-::SET CWVer=Clarion 8.0.9759
-SET BuildConfig=%2
+::REM ---------------------
+::SET RedirSection=Debug
+SET RedirSection=%2
 SET BuildFolder=C:\Windows\Microsoft.NET\Framework\v2.0.50727
+::SET BuildFolder=C:\Windows\Microsoft.NET\Framework\v4.0.30319
+:: SET CWRoot=C:\SV\Clarion9
+::SET CWVer=Clarion 8.0.9759
 SET CWRoot=%3
-SET CWVer=%4
-::---------------------
+::--------------------
 SET Properties=
-CALL :AddProperty 		Configuration    	"%BuildConfig%"
-CALL :AddProperty 		clarion_Sections 	"%BuildConfig%"
+CALL :AddProperty 		Configuration    	"%RedirSection%"
+CALL :AddProperty 		clarion_Sections 	"%RedirSection%"
 CALL :AddProperty 		SolutionDir      	"%BuildWhatDir%"
 CALL :AddProperty 		ClarionBinPath   	"%CWRoot%\Bin"
 CALL :AddProperty 		NoDependency     	true
+
+CALL :AddProperty 		Verbosoity	    	diagnostic
+CALL :AddProperty       WarningLevel      1
+
 ::----
 :: Doc says that it will use the most current, if this property is not explicity SET
-IF .%CWVer%.==."". GOTO SkipCWVer
-IF .%CWVer%.==..   GOTO SkipCWVer
-@CALL :AddProperty  clarion_version "%CWVer%"
-:SkipCWVer
+::@CALL :AddProperty  clarion_version "%CWVer%"
 ::---
 ::
 ::------------- BUILD IT
-ECHO\
-@ECHO ON
- %BuildFolder%\MSBuild 		%BuildWhat% 		%Properties%
-@ECHO OFF
+@ECHO ----------------------- Current folder
+CD
+@ECHO ----------------------- Current folder
+%BuildFolder%\MSBuild 	%BuildWhat% 		%Properties% 
+@ECHO ----------------------- Current folder
+CD
+@ECHO ----------------------- Current folder
 GOTO DONE
 ::------------- BUILD IT
 ::
@@ -57,24 +68,19 @@ GOTO DONE
 
 :SetCurrPath <FileNameWithDriveDir>
 (
-	::v--- SET current drive
-	ECHO Set Drive  [%~d1]
-	%~d1
-	::v--- SET current folder
- 	ECHO Set Folder [%~p1]
-	CD %~p1
-	EXIT /B
+@REM v--- SET current drive
+%~d1
+@REM ^--- SET current folder
+CD %~p1
+EXIT /B
 )
 
 :SetAndParseBuildWhat <DriveDirSolution>
 (
-	SET BuildWhat=%~nx1
-	CALL :SetCurrPath %1
-	SET BuildWhatDir=%~dp1
-	::TODO, remove trailing / from BuildWahtDir
-	::SET Y=%BuildWhatDir:~0,-1%
-	::ECHO Y is %Y%
-	EXIT /B
+SET BuildWhat=%~nx1
+CALL :SetCurrPath %1
+SET BuildWhatDir=%~dp1
+EXIT /B
 )
 ::==============================================================================
 :DONE

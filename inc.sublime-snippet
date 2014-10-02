@@ -1,0 +1,5 @@
+<snippet>
+	<content><![CDATA[INCLUDE('${1:file}.inc'),ONCE]]></content>
+	<tabTrigger>inc</tabTrigger>
+	<scope>source.clarion</scope>
+</snippet>

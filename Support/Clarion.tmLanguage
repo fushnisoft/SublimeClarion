@@ -102,7 +102,7 @@
 		<key>baseTypes</key>
 		<dict>
 			<key>match</key>
-			<string>\b(?i:ANY|ASTRING|BFLOAT4|BFLOAT8|BLOB|BOOL|BSTRING|BYTE|CSTRING|DATE|DECIMAL|DOUBLE|FLOAT4|LONG|PDECIMAL|PSTRING|REAL|SHORT|SIGNED|SREAL|STRING|TIME|ULONG|UNSIGNED|USHORT|VARIANT)\b</string>
+			<string>\b(?i:ANY|ASTRING|BFLOAT4|BFLOAT8|BLOB|BOOL|BSTRING|BYTE|CSTRING|DATE|DECIMAL|DOUBLE|FLOAT4|LONG|LIKE|PDECIMAL|PSTRING|REAL|SHORT|SIGNED|SREAL|STRING|TIME|ULONG|UNSIGNED|USHORT|VARIANT)\b</string>
 			<key>name</key>
 			<string>storage.type.base-types.clarion</string>
 		</dict>
@@ -151,7 +151,7 @@
 		<key>hardReservedKeywords</key>
 		<dict>
 			<key>match</key>
-			<string>\b(?i:ACCEPT|BREAK|BY|CASE|CHOOSE|CYCLE|DO|ELSE|ELSIF|END|EXECUTE|EXIT|FUNCTION|GOTO|IF|LOOP|MEMBER|NEW|OF|OROF|PARENT|PROCEDURE|PROGRAM|RETURN|ROUTINE|SELF|THEN|TIMES|TO|UNTIL|WHILE)\b</string>
+			<string>\b(?i:ACCEPT|AND|BREAK|BY|CASE|CHOOSE|CYCLE|DO|ELSE|ELSIF|END|EXECUTE|EXIT|FUNCTION|GOTO|IF|LOOP|MEMBER|NEW|NOT|OF|OR|OROF|PARENT|PROCEDURE|PROGRAM|RETURN|ROUTINE|SELF|THEN|TIMES|TO|UNTIL|WHILE)\b</string>
 			<key>name</key>
 			<string>keyword.clarion</string>
 		</dict>
@@ -180,7 +180,7 @@
 		<key>langConstants</key>
 		<dict>
 			<key>match</key>
-			<string>\b(?i:TRUE|FALSE)\b</string>
+			<string>\b(?i:TRUE|FALSE|NULL)\b</string>
 			<key>name</key>
 			<string>support.constant.clarion</string>
 		</dict>
@@ -194,7 +194,7 @@
 		<key>langProps</key>
 		<dict>
 			<key>match</key>
-			<string>\b(?i:PROP|EVENT|COLOR|CREATE|BRUSH|FILE|LEVEL|STD|CURSOR|ICON|BEEP|REJECT|FONT|CHARSET|PEN|LISTZONE|BUTTON|MSGMODE|WINDOW|TEXT|FREEZE|DDE|FF_|OCX|DOCK|MATCH|PAPER|DRIVEROP|DATATYPE|GradientTypes):\w*\b</string>
+			<string>\b(?i:PROP|PROPLIST|EVENT|COLOR|CREATE|BRUSH|FILE|LEVEL|STD|CURSOR|ICON|BEEP|REJECT|FONT|CHARSET|PEN|LISTZONE|BUTTON|MSGMODE|WINDOW|TEXT|FREEZE|DDE|FF_|OCX|DOCK|MATCH|PAPER|DRIVEROP|DATATYPE|GradientTypes):\w*\b</string>
 			<key>name</key>
 			<string>support.constant.clarion</string>
 		</dict>

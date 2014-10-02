@@ -1,0 +1,14 @@
+SublimeText package for Clarion
+===============================
+
+v1.0.7 installed!
+
+Updates:
+--------
+
+CHANGED: Merged a bunch of changes, thanks Mark! https://github.com/fushnisoft/SublimeClarion/pull/4
+
+Support:
+--------
+
+https://github.com/fushnisoft/SublimeClarion/issues

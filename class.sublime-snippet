@@ -1,0 +1,28 @@
+<snippet>
+	<content><![CDATA[
+${1:ctYada}   CLASS,TYPE,MODULE('${1:ctYada}.clw'),LINK('${1:ctYada}.clw')
+!------------------------
+CONSTRUCT      PROCEDURE()
+DESTRUCT       PROCEDURE()
+   END
+
+
+
+  !for the '${1:ctYada}.clw'
+
+   MEMBER()
+   INCLUDE('${1:ctYada}.inc'),ONCE
+   MAP
+   END
+
+
+${1:ctYada}.CONSTRUCT      PROCEDURE()
+   CODE
+
+${1:ctYada}.DESTRUCT       PROCEDURE()
+   CODE
+
+   ]]></content>
+	<tabTrigger>class</tabTrigger>
+	<scope>source.clarion</scope>
+</snippet>

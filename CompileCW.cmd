@@ -21,20 +21,30 @@ SET BuildWhatDir=%BuildWhatDir:~0,-1%
 ::REM ---------------------
 ::SET RedirSection=Debug
 SET RedirSection=%2
-SET BuildFolder=C:\Windows\Microsoft.NET\Framework\v2.0.50727
-::SET BuildFolder=C:\Windows\Microsoft.NET\Framework\v4.0.30319
+::SET BuildFolder=C:\Windows\Microsoft.NET\Framework\v2.0.50727
+SET BuildFolder=C:\Windows\Microsoft.NET\Framework\v4.0.30319
 :: SET CWRoot=C:\SV\Clarion9
 ::SET CWVer=Clarion 8.0.9759
 SET CWRoot=%3
 ::--------------------
 SET Properties=
+::--------------------
+::-------------------- experimental
+::--------------------
+:: SET Properties=/maxcpucount:2 /clp:ShowTimeStamp
+:: SET Properties=/maxcpucount:2 
+CALL :AddProperty 		redirection_ConfigDir    	    "%CWRoot%\Settings"
+:: CALL :AddProperty               BuildInParallel          true
+::--------------------
+::-------------------- experimental -end
+::--------------------
 CALL :AddProperty 		Configuration    	"%RedirSection%"
 CALL :AddProperty 		clarion_Sections 	"%RedirSection%"
 CALL :AddProperty 		SolutionDir      	"%BuildWhatDir%"
 CALL :AddProperty 		ClarionBinPath   	"%CWRoot%\Bin"
 CALL :AddProperty 		NoDependency     	true
 
-CALL :AddProperty 		Verbosoity	    	diagnostic
+CALL :AddProperty 		Verbosity	    	diagnostic
 CALL :AddProperty       WarningLevel      1
 
 ::----
@@ -46,6 +56,7 @@ CALL :AddProperty       WarningLevel      1
 @ECHO ----------------------- Current folder
 CD
 @ECHO ----------------------- Current folder
+@ECHO %Properties%
 %BuildFolder%\MSBuild 	%BuildWhat% 		%Properties% 
 @ECHO ----------------------- Current folder
 CD

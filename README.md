@@ -1,4 +1,14 @@
-# Installation
+# Discussion available on ClarionHub!
+
+Read the announcment and join the discussion at [ClarionHub](http://clarionhub.com/t/clarion-syntax-highlighting-support-in-vscode/480)
+
+# Installation - VSCode
+
+> Install the VSCode extention via the market place. 
+
+Either download it directly and [install manually](https://code.visualstudio.com/docs/extensions/install-extension) or from within VSCode as described on the [Getting Started page](https://code.visualstudio.com/docs/editor/extension-gallery?pub=Fushnisoft&ext=Clarion).
+
+# Installation - SublimeText
 
 ## via Package Control
 

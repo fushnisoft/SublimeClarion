@@ -1,7 +1,7 @@
 {
 	"name": "Clarion",
 	"description": "Clarion Language Support",
-	"version": "1.0.14",
+	"version": "1.0.15",
 	"publisher": "Fushnisoft",
 	"repository": {
 		"type": "git",

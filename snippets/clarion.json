@@ -1,37 +1,32 @@
 {
-    "Class using recomended pattern": {
-        "prefix": "class",
-        "body": [
-           "CLASS ${Name},TYPE,MODULE('${Name}.clw'),LINK('${Name}.clw')",
-           "!------------------------",
-           "CONSTRUCT       PROCEDURE()",
-           "DESTRUCT        PROCEDURE()",
-			"END",
-            "$0",
-            "", 
-            "", 
-            "!for the '${Name}.clw'",
-            "",
-            "\tMEMBER()",
-            "\tINCLUDE('${Name}.inc'),ONCE",
-            "\tMAP",
-            "\tEND",
-            "",
-            "",
-            "${Name}.CONSTRUCT      PROCEDURE()",
-            "\tCODE",
-            "",
-            "${Name}.DESTRUCT      PROCEDURE()",
-            "\tCODE",
-            ""
-        ],
-        "description": "Clarion Class Skeleton"
-    },
-    "INCLUDE snippet": {
-        "prefix": "inc",
-        "body": [
-            "INCLUDE('${name}.inc'),ONCE"
-        ],
-        "description": "Include snippet"
-    }
+	"class": {
+		"prefix": "class",
+		"body": "\r\n${1:ctYada}   CLASS,TYPE,MODULE('${1:ctYada}.clw'),LINK('${1:ctYada}.clw')\r\n!------------------------\r\nCONSTRUCT      PROCEDURE()\r\nDESTRUCT       PROCEDURE()\r\n   END\r\n\r\n\r\n\r\n  !for the '${1:ctYada}.clw'\r\n\r\n   MEMBER()\r\n   INCLUDE('${1:ctYada}.inc'),ONCE\r\n   MAP\r\n   END\r\n\r\n\r\n${1:ctYada}.CONSTRUCT      PROCEDURE()\r\n   CODE\r\n\r\n${1:ctYada}.DESTRUCT       PROCEDURE()\r\n   CODE\r\n\r\n   ",
+		"description": "",
+		"scope": "source.clarion"
+	},
+	"inc": {
+		"prefix": "inc",
+		"body": "INCLUDE('${1:file}.inc'),ONCE",
+		"description": "",
+		"scope": "source.clarion"
+	},
+	"ods": {
+		"prefix": "ods",
+		"body": "\r\nAssert(0,eqDBG&'${0}')\r\n",
+		"description": "",
+		"scope": "source.clarion"
+	},
+	"var": {
+		"prefix": "var",
+		"body": "${1:Var}['& ${1:Var} &']${0}",
+		"description": "",
+		"scope": "source.clarion"
+	},
+	"varn": {
+		"prefix": "varn",
+		"body": "${1:RefVar}['& CHOOSE(${1:RefVar}&=NULL,'IsNull','Ok') &']${0}",
+		"description": "",
+		"scope": "source.clarion"
+	}
 }

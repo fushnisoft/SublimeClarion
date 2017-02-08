@@ -1,0 +1,37 @@
+{
+    "Class using recomended pattern": {
+        "prefix": "class",
+        "body": [
+           "CLASS ${Name},TYPE,MODULE('${Name}.clw'),LINK('${Name}.clw')",
+           "!------------------------",
+           "CONSTRUCT       PROCEDURE()",
+           "DESTRUCT        PROCEDURE()",
+			"END",
+            "$0",
+            "", 
+            "", 
+            "!for the '${Name}.clw'",
+            "",
+            "\tMEMBER()",
+            "\tINCLUDE('${Name}.inc'),ONCE",
+            "\tMAP",
+            "\tEND",
+            "",
+            "",
+            "${Name}.CONSTRUCT      PROCEDURE()",
+            "\tCODE",
+            "",
+            "${Name}.DESTRUCT      PROCEDURE()",
+            "\tCODE",
+            ""
+        ],
+        "description": "Clarion Class Skeleton"
+    },
+    "INCLUDE snippet": {
+        "prefix": "inc",
+        "body": [
+            "INCLUDE('${name}.inc'),ONCE"
+        ],
+        "description": "Include snippet"
+    }
+}

@@ -20,9 +20,11 @@
 		"vscode": "^0.10.1"
 	},
 	"categories": [
-		"Languages"
+		"Languages",
+		"Snippets"
 	],
 	"contributes": {
+		
 		"languages": [
 			{
 				"id": "clarion",
@@ -49,6 +51,12 @@
 				"scopeName": "source.clarion",
 				"path": "./syntaxes/Clarion.tmLanguage"
 			}
+		],
+		"snippets": [
+		   {	
+			   "language": "clarion",
+			   "path": "./snippets/clarion.json"
+		   }
 		]
 	}
 }

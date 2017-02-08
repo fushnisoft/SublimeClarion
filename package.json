@@ -1,7 +1,7 @@
 {
 	"name": "Clarion",
 	"description": "Clarion Language Support",
-	"version": "1.0.10",
+	"version": "1.0.14",
 	"publisher": "Fushnisoft",
 	"repository": {
 		"type": "git",
@@ -9,13 +9,13 @@
 	},
 	"icon": "images/sv57x57.png",
 	"galleryBanner": {
-    "color": "#474747",
-    "theme": "dark"
-  	},
-    "license":"SEE LICENSE IN LICENSE.txt",
+		"color": "#474747",
+		"theme": "dark"
+	},
+	"license": "SEE LICENSE IN LICENSE.txt",
 	"bugs": {
-        "url": "https://github.com/fushnisoft/SublimeClarion/issues"
-    },
+		"url": "https://github.com/fushnisoft/SublimeClarion/issues"
+	},
 	"engines": {
 		"vscode": "^0.10.1"
 	},
@@ -23,16 +23,32 @@
 		"Languages"
 	],
 	"contributes": {
-		"languages": [{
-			"id": "clarion",
-			"aliases": ["Clarion", "clarion"],
-			"extensions": [".clw",".equ",".inc",".int",".txa",".txd",".tpl",".tpw"],
-			"configuration": "./clarion.configuration.json"
-		}],
-		"grammars": [{
-			"language": "clarion",
-			"scopeName": "source.clarion",
-			"path": "./syntaxes/Clarion.tmLanguage"
-		}]
+		"languages": [
+			{
+				"id": "clarion",
+				"aliases": [
+					"Clarion",
+					"clarion"
+				],
+				"extensions": [
+					".clw",
+					".equ",
+					".inc",
+					".int",
+					".txa",
+					".txd",
+					".tpl",
+					".tpw"
+				],
+				"configuration": "./clarion.configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "clarion",
+				"scopeName": "source.clarion",
+				"path": "./syntaxes/Clarion.tmLanguage"
+			}
+		]
 	}
 }

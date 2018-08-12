@@ -1,12 +1,13 @@
 {
-	"name": "Clarion",
+	"name": "clarion",
 	"description": "Clarion Language Support",
-	"version": "1.0.17",
-	"publisher": "Fushnisoft",
+	"version": "1.0.18",
+	"author": "Fushnisoft",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/fushnisoft/SublimeClarion"
 	},
+	"publisher": "Fushnisoft",
 	"icon": "images/sv57x57.png",
 	"galleryBanner": {
 		"color": "#474747",
@@ -20,7 +21,7 @@
 		"vscode": "^0.10.1"
 	},
 	"categories": [
-		"Languages",
+		"Programming Languages",
 		"Snippets"
 	],
 	"contributes": {
@@ -45,11 +46,14 @@
 				"configuration": "./clarion.configuration.json"
 			}
 		],
+		"engines": {
+			"vscode": "^1.23.0"
+		},
 		"grammars": [
 			{
 				"language": "clarion",
 				"scopeName": "source.clarion",
-				"path": "./syntaxes/Clarion.tmLanguage"
+				"path": "./syntaxes/Clarion.tmLanguage.json"
 			}
 		],
 		"snippets": [

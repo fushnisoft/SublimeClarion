@@ -58,7 +58,7 @@
 		],
 		"snippets": [
 		   {	
-			   "language": "clarion",
+			   "language": "Clarion",
 			   "path": "./snippets/clarion.json"
 		   }
 		]

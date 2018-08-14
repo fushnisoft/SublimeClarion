@@ -28,7 +28,7 @@
 		
 		"languages": [
 			{
-				"id": "clarion",
+				"id": "Clarion",
 				"aliases": [
 					"Clarion",
 					"clarion"
@@ -51,7 +51,7 @@
 		},
 		"grammars": [
 			{
-				"language": "clarion",
+				"language": "Clarion",
 				"scopeName": "source.clarion",
 				"path": "./syntaxes/Clarion.tmLanguage.json"
 			}

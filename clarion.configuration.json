@@ -15,10 +15,16 @@
 		["(", ")"],
 		{ "open": "'", "close": "'", "notIn": ["string", "comment"] }
 	],
-	 "surroundingPairs": [
+	"surroundingPairs": [
 		["{", "}"],
 		["[", "]"],
 		["(", ")"],
 		["'", "'"]
-	]
+	],
+	"folding": {
+		"markers": {
+			"start": "^\\s*s*!region\\b",
+			"end": "^\\s*!endregion\\b"
+		}
+	}
 }
